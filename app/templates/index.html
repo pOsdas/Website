@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/chronometer.png') }}">
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="stopwatch">
+      <input id="input" type="number" placeholder="Enter seconds">
+      <div class="time" id="timeDisplay">00 : 00 : 00</div>
+    </div>
+    <div class="controls">
+      <button id="start">Start</button>
+      <button id="stop">Stop</button>
+      <button id="reset">Reset</button>
+    </div>
+  </div>
+  <div id="popup">
+    <p>The number is <span>not</span> valid !</p>
+    <img src="https://cdn.dribbble.com/users/2469324/screenshots/6538803/comp_3.gif" alt="error">
+    <button id="accept">ok</button>
+  </div>
+</body>
+</html>
